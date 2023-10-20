@@ -17,7 +17,7 @@ interface Props {
   platforms: Platform[];
 }
 
-const PlatformIconList = ({ platforms }: Props) => {
+const PlatformIconList = ({ platforms = [] }: Props) => {
   const iconMap: { [key: string]: IconType } = {
     pc: FaWindows,
     playstation: FaPlaystation,
@@ -26,7 +26,7 @@ const PlatformIconList = ({ platforms }: Props) => {
     mac: FaApple,
     linux: FaLinux,
     android: FaAndroid,
-    iphone: MdPhoneIphone,
+    ios: MdPhoneIphone,
     web: BsGlobe,
   };
 
